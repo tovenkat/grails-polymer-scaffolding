@@ -36,3 +36,15 @@ copy content of index.html to poly.gsp
 "/"(view:"/poly")
     
 ```
+
+####Hot swapping & LiveReload:
+```
+In build.gadle add in dependencies
+compile("org.springframework.boot:spring-boot-devtools")
+Add in application.yml
+spring:
+    devtools:
+        restart:
+            additional-paths :  src/main/webapp
+    
+```
